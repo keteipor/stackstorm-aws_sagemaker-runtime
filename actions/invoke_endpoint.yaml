@@ -1,0 +1,35 @@
+---
+description: 
+pack: aws_sagemaker-runtime
+enabled: true
+entry_point: run.py
+name: invoke_endpoint
+runner_type: python-script
+parameters:
+  action:
+    default: invoke_endpoint
+    immutable: true
+    type: string
+  cls:
+    default: sagemaker-runtime
+    type: string
+  headers:
+    type: string
+  module_path:
+    default: boto3
+    immutable: true
+    type: string
+  EndpointName:
+    type: string
+    description: "The name of the endpoint that you specified when you created the endpoint using the CreateEndpoint API. "
+    required: true
+  Body:
+    type: string
+    description: "Provides input data, in the format specified in the ContentType request header. Amazon SageMaker passes all of the data in the body to the model. "
+    required: true
+  ContentType:
+    type: string
+    description: "The MIME type of the input data in the request body."
+  Accept:
+    type: string
+    description: "The desired MIME type of the inference in the response."

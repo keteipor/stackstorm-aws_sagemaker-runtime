@@ -1,0 +1,15 @@
+---
+ref: aws_sagemaker-runtime
+name : aws_sagemaker-runtime
+description : st2 content pack containing Amazon Web Services integrations.
+keywords:
+  - aws
+  - amazon web services
+  - amazon
+  - sagemaker-runtime
+
+version : 2.0.1
+author : StackStorm, Inc.
+email : info@stackstorm.com
+contributors:
+  - Andy Moore <andrew.moore@pearson.com>
